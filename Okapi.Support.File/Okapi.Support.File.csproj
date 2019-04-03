@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net45;net46</TargetFrameworks>
+    <Version>1.0.0</Version>
+    <Authors>Tam Nguyen</Authors>
+    <Company>Tam Nguyen</Company>
+    <Description>Support Okapi, providing file report formatter and file logger</Description>
+    <PackageTags>Okapi, ExtSelenium, Selenium; Automation; Test</PackageTags>
+    <RepositoryUrl>https://github.com/tamnguyenbbt/Okapi.Support.File</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageLicenseUrl>https://github.com/tamnguyenbbt/Okapi.Support.File/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/tamnguyenbbt/Okapi.Support.File</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Support Okapi, providing file report formatter and file logger</PackageReleaseNotes>
+    <AutoGenerateBindingRedirects>True</AutoGenerateBindingRedirects>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Okapi" Version="1.0.7" />
+    <PackageReference Include="Serilog" Version="2.8.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+
+</Project>
