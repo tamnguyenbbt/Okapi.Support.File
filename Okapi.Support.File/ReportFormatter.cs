@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Okapi.Common;
 using Okapi.Extensions;
 using Okapi.Report;
 using Serilog;
@@ -13,11 +14,12 @@ namespace Okapi.Support.File
     {
         private static SeriLogLogger logger;
 
-        public ReportFormatter(string fileName)
+        public ReportFormatter()
         {
+            string logFilePath = Session.Instance.LogPath;
             logger = new LoggerConfiguration()
            .WriteTo
-           .File(fileName).CreateLogger();
+           .File(logFilePath).CreateLogger();
         }
 
         public void Run(TestCase testCase)

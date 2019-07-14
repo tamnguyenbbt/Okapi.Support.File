@@ -1,4 +1,5 @@
 ﻿using System;
+using Okapi.Common;
 using Okapi.Logs;
 using Serilog;
 using SeriLogLogger = Serilog.Core.Logger;
@@ -9,9 +10,10 @@ namespace Okapi.Support.File
     {
         private static SeriLogLogger logger;
 
-        public Logger(string fileName)
+        public Logger()
         {
-            logger = new LoggerConfiguration().WriteTo.File(fileName).CreateLogger();
+            string logFilePath = Session.Instance.LogPath;
+            new LoggerConfiguration().WriteTo.File(logFilePath).CreateLogger();
         }
 
         public void Error(string messageTemplate)
