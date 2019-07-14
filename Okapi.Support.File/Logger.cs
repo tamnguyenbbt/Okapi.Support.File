@@ -13,7 +13,7 @@ namespace Okapi.Support.File
         public Logger()
         {
             string logFilePath = Session.Instance.LogPath;
-            new LoggerConfiguration().WriteTo.File(logFilePath).CreateLogger();
+            logger = new LoggerConfiguration().WriteTo.File(logFilePath).CreateLogger();
         }
 
         public void Error(string messageTemplate)
