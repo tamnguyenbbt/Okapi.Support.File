@@ -9,7 +9,7 @@ using Okapi.Report;
 using Serilog;
 using SeriLogLogger = Serilog.Core.Logger;
 
-namespace Okapi.Support.File
+namespace Okapi.Support.Report.Text
 {
     public class ReportFormatter : IReportFormatter
     {
