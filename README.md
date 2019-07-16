@@ -2,8 +2,8 @@
 Support Okapi Web UI automation test library, providing text report formatter
 
 ## NuGet
-* https://www.nuget.org/packages/Okapi.Support.Report.Text/1.0.0
-* Install-Package Okapi.Support.Report.Text -Version 1.0.0
+* https://www.nuget.org/packages/Okapi.Support.Report.Text/1.0.1
+* Install-Package Okapi.Support.Report.Text -Version 1.0.1
 
 ## Dependencies
 ### .NETFramework 4.5
@@ -17,7 +17,7 @@ Support Okapi Web UI automation test library, providing text report formatter
 * Serilog.Sinks.File (>= 4.0.0)
           
 ## Versions
-* Version **1.0.0** released on 16/07/2019
+* Version **1.0.1** released on 16/07/2019
 
 ## Author
 ###  **Tam Nguyen**
