@@ -6,7 +6,6 @@ using System.Text;
 using Okapi.Common;
 using Okapi.Extensions;
 using Okapi.Report;
-using Okapi.Utils;
 using Serilog;
 using SeriLogLogger = Serilog.Core.Logger;
 
@@ -18,8 +17,9 @@ namespace Okapi.Support.File
 
         public ReportFormatter()
         {
-            string reportDirectory = Session.Instance.ReportDirectory;
-            string reportFileName = $"{reportDirectory}{Path.DirectorySeparatorChar}OkapiReport_{Util.SessionStartDateTime.GetTimestamp()}.txt";
+            Session session = Session.Instance;
+            string reportDirectory = session.ReportDirectory;
+            string reportFileName = $"{reportDirectory}{Path.DirectorySeparatorChar}OkapiReport_{session.StartDateTime.GetTimestamp()}.txt";
             logger = new LoggerConfiguration()
                 .WriteTo
                 .File(reportFileName).CreateLogger();

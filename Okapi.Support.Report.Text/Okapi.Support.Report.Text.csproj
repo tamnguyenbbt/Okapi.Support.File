@@ -1,25 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net45;net46</TargetFrameworks>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Tam Nguyen</Authors>
     <Company>Tam Nguyen</Company>
-    <Description>Support Okapi, providing file report formatter and file logger</Description>
+    <Description>Support Okapi, providing text report formatter</Description>
     <PackageTags>Okapi, ExtSelenium, Selenium; Automation; Test</PackageTags>
-    <RepositoryUrl>https://github.com/tamnguyenbbt/Okapi.Support.File</RepositoryUrl>
+    <RepositoryUrl>https://github.com/tamnguyenbbt/Okapi.Support.Report.Text</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <PackageLicenseUrl>https://github.com/tamnguyenbbt/Okapi.Support.File/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/tamnguyenbbt/Okapi.Support.File</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/tamnguyenbbt/Okapi.Support.Report.Text/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/tamnguyenbbt/Okapi.Support.Report.Text</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>- Remove the dependency on Okapi
-- Add the dependency on Okapi.Common
-- Remove constructors with parameters from both Logger and ReportFormatter</PackageReleaseNotes>
+    <PackageReleaseNotes>Change repo name to Okapi.Support.Report.Text</PackageReleaseNotes>
     <AutoGenerateBindingRedirects>True</AutoGenerateBindingRedirects>
     <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Okapi.Common" Version="1.0.0" />
+    <PackageReference Include="Okapi.Common" Version="1.0.3" />
     <PackageReference Include="Serilog" Version="2.8.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
   </ItemGroup>
