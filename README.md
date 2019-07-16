@@ -1,4 +1,4 @@
-# Okapi.Support.File
+# Okapi.Support.Report.Text
 Support Okapi Web UI automation test library, providing text report formatter
 
 ## NuGet
