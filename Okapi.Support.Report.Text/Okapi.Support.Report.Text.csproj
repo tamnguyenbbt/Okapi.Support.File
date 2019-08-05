@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net45;net46</TargetFrameworks>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Tam Nguyen</Authors>
     <Company>Tam Nguyen</Company>
     <Description>Support Okapi, providing text report formatter</Description>
@@ -12,12 +12,12 @@
     <PackageProjectUrl>https://github.com/tamnguyenbbt/Okapi.Support.Report.Text</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Correct ReportFormatter namespace</PackageReleaseNotes>
+    <PackageReleaseNotes>Update  the dependency - Okapi.Common - to 1.0.7 (https://www.nuget.org/packages/Okapi.Common/1.0.7)</PackageReleaseNotes>
     <AutoGenerateBindingRedirects>True</AutoGenerateBindingRedirects>
     <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Okapi.Common" Version="1.0.3" />
+    <PackageReference Include="Okapi.Common" Version="1.0.7" />
     <PackageReference Include="Serilog" Version="2.8.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
   </ItemGroup>

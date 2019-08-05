@@ -124,7 +124,7 @@ namespace Okapi.Support.Report.Text
             NewLineAndTab(reportStringBuilder);
             NewLineAndTab(reportStringBuilder);
 
-            if (testCase.Result.Equals(TestResult.PASS))
+            if (testCase.Result.Equals(TestResult.Passed))
             {
                 logger.Information(reportStringBuilder.ToString());
             }
